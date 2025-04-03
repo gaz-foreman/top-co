@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group Website</title>
+    <link rel="stylesheet" href="/index.css">
+    <script src="scripts/index.js"></script>
+</head>
+
+<body class="loading">
+
+    <div class="filter-container" data-component-list="TextGlow">
+        <svg style="display:none" width='1440px' height='300px' viewBox='0 0 1440 300'
+            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <defs>
+                <filter id="glow-battery-backup" color-interpolation-filters="sRGB" x="-50%" y="-50%" width="200%"
+                    Height="200%">
+                    <feGaussianBlur in="SourceGraphic" data-target-blur="4" stdDeviation="4" result="blur4" />
+                    <feGaussianBlur in="SourceGraphic" data-target-blur="19" stdDeviation="19" result="blur19" />
+                    <feGaussianBlur in="SourceGraphic" data-target-blur="9" stdDeviation="9" result="blur9" />
+                    <feGaussianBlur in="SourceGraphic" data-target-blur="30" stdDeviation="30" result="blur30" />
+                    <feColorMatrix in="blur4" result="color-0-blur" type="matrix" values="1 0 0 0 0
+                              0 0.9803921568627451 0 0 0
+                              0 0 0.9647058823529412 0 0
+                              0 0 0 0.8 0" />
+                    <feOffset in="color-0-blur" result="layer-0-offsetted" dx="0" dy="0" data-target-offset-y="0" />
+                    <feColorMatrix in="blur19" result="color-1-blur" type="matrix" values="0.8156862745098039 0 0 0 0
+                              0 0.49411764705882355 0 0 0
+                              0 0 0.2627450980392157 0 0
+                              0 0 0 1 0" />
+                    <feOffset in="color-1-blur" result="layer-1-offsetted" dx="0" dy="2" data-target-offset-y="2" />
+                    <feColorMatrix in="blur9" result="color-2-blur" type="matrix" values="1 0 0 0 0
+                              0 0.6666666666666666 0 0 0
+                              0 0 0.36470588235294116 0 0
+                              0 0 0 0.65 0" />
+                    <feOffset in="color-2-blur" result="layer-2-offsetted" dx="0" dy="2" data-target-offset-y="2" />
+                    <feColorMatrix in="blur30" result="color-3-blur" type="matrix" values="1 0 0 0 0
+                              0 0.611764705882353 0 0 0
+                              0 0 0.39215686274509803 0 0
+                              0 0 0 1 0" />
+                    <feOffset in="color-3-blur" result="layer-3-offsetted" dx="0" dy="2" data-target-offset-y="2" />
+                    <feColorMatrix in="blur30" result="color-4-blur" type="matrix" values="0.4549019607843137 0 0 0 0
+                              0 0.16470588235294117 0 0 0
+                              0 0 0 0 0
+                              0 0 0 1 0" />
+                    <feOffset in="color-4-blur" result="layer-4-offsetted" dx="0" dy="16" data-target-offset-y="16" />
+                    <feColorMatrix in="blur30" result="color-5-blur" type="matrix" values="0.4235294117647059 0 0 0 0
+                              0 0.19607843137254902 0 0 0
+                              0 0 0.11372549019607843 0 0
+                              0 0 0 1 0" />
+                    <feOffset in="color-5-blur" result="layer-5-offsetted" dx="0" dy="64" data-target-offset-y="64" />
+                    <feColorMatrix in="blur30" result="color-6-blur" type="matrix" values="0.21176470588235294 0 0 0 0
+                              0 0.10980392156862745 0 0 0
+                              0 0 0.07450980392156863 0 0
+                              0 0 0 1 0" />
+                    <feOffset in="color-6-blur" result="layer-6-offsetted" dx="0" dy="64" data-target-offset-y="64" />
+                    <feColorMatrix in="blur30" result="color-7-blur" type="matrix" values="0 0 0 0 0
+                              0 0 0 0 0
+                              0 0 0 0 0
+                              0 0 0 0.68 0" />
+                    <feOffset in="color-7-blur" result="layer-7-offsetted" dx="0" dy="64" data-target-offset-y="64" />
+                    <feMerge>
+                        <feMergeNode in="layer-0-offsetted" />
+                        <feMergeNode in="layer-1-offsetted" />
+                        <feMergeNode in="layer-2-offsetted" />
+                        <feMergeNode in="layer-3-offsetted" />
+                        <feMergeNode in="layer-4-offsetted" />
+                        <feMergeNode in="layer-5-offsetted" />
+                        <feMergeNode in="layer-6-offsetted" />
+                        <feMergeNode in="layer-7-offsetted" />
+                        <feMergeNode in="layer-0-offsetted" />
+                        <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                </filter>
+                <filter id="glow-battery" color-interpolation-filters="sRGB" x="-50%" y="-50%" width="200%"
+                    Height="200%">
+                    <feGaussianBlur in="SourceGraphic" data-target-blur="4" stdDeviation="4" result="blur4" />
+                    <feGaussianBlur in="SourceGraphic" data-target-blur="19" stdDeviation="19" result="blur19" />
+                    <feGaussianBlur in="SourceGraphic" data-target-blur="9" stdDeviation="9" result="blur9" />
+                    <feGaussianBlur in="SourceGraphic" data-target-blur="30" stdDeviation="30" result="blur30" />
+                    <feColorMatrix in="blur4" result="color-0-blur" type="matrix" values="1 0 0 0 0
+                              0 0.9803921568627451 0 0 0
+                              0 0 0.9647058823529412 0 0
+                              0 0 0 0.8 0" />
+                    <feOffset in="color-0-blur" result="layer-0-offsetted" dx="0" dy="0" data-target-offset-y="0" />
+                    <feColorMatrix in="blur19" result="color-1-blur" type="matrix" values="0.8156862745098039 0 0 0 0
+                              0 0.49411764705882355 0 0 0
+                              0 0 0.2627450980392157 0 0
+                              0 0 0 1 0" />
+                    <feOffset in="color-1-blur" result="layer-1-offsetted" dx="0" dy="2" data-target-offset-y="2" />
+                    <feColorMatrix in="blur9" result="color-2-blur" type="matrix" values="1 0 0 0 0
+                              0 0.6666666666666666 0 0 0
+                              0 0 0.36470588235294116 0 0
+                              0 0 0 0.65 0" />
+                    <feOffset in="color-2-blur" result="layer-2-offsetted" dx="0" dy="2" data-target-offset-y="2" />
+                    <feColorMatrix in="blur30" result="color-3-blur" type="matrix" values="1 0 0 0 0
+                              0 0.611764705882353 0 0 0
+                              0 0 0.39215686274509803 0 0
+                              0 0 0 1 0" />
+                    <feOffset in="color-3-blur" result="layer-3-offsetted" dx="0" dy="2" data-target-offset-y="2" />
+                    <feColorMatrix in="blur30" result="color-4-blur" type="matrix" values="0.4549019607843137 0 0 0 0
+                              0 0.16470588235294117 0 0 0
+                              0 0 0 0 0
+                              0 0 0 1 0" />
+                    <feOffset in="color-4-blur" result="layer-4-offsetted" dx="0" dy="16" data-target-offset-y="16" />
+                    <feColorMatrix in="blur30" result="color-5-blur" type="matrix" values="0.4235294117647059 0 0 0 0
+                              0 0.19607843137254902 0 0 0
+                              0 0 0.11372549019607843 0 0
+                              0 0 0 1 0" />
+                    <feOffset in="color-5-blur" result="layer-5-offsetted" dx="0" dy="64" data-target-offset-y="64" />
+                    <feColorMatrix in="blur30" result="color-6-blur" type="matrix" values="0.21176470588235294 0 0 0 0
+                              0 0.10980392156862745 0 0 0
+                              0 0 0.07450980392156863 0 0
+                              0 0 0 1 0" />
+                    <feOffset in="color-6-blur" result="layer-6-offsetted" dx="0" dy="64" data-target-offset-y="64" />
+                    <feColorMatrix in="blur30" result="color-7-blur" type="matrix" values="0 0 0 0 0
+                              0 0 0 0 0
+                              0 0 0 0 0
+                              0 0 0 0.68 0" />
+                    <feOffset in="color-7-blur" result="layer-7-offsetted" dx="0" dy="64" data-target-offset-y="64" />
+                    <feMerge>
+                        <feMergeNode in="layer-0-offsetted" />
+                        <feMergeNode in="layer-1-offsetted" />
+                        <feMergeNode in="layer-2-offsetted" />
+                        <feMergeNode in="layer-3-offsetted" />
+                        <feMergeNode in="layer-4-offsetted" />
+                        <!-- <feMergeNode in="layer-5-offsetted"/> -->
+                        <!-- <feMergeNode in="layer-6-offsetted"/> -->
+                        <!-- <feMergeNode in="layer-7-offsetted"/> -->
+                        <feMergeNode in="layer-0-offsetted" />
+                        <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                </filter>
+                <filter id="glow-battery-safari" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"
+                    x="-50%" y="-50%" width="200%" Height="200%">
+                    <feGaussianBlur in="SourceGraphic" data-target-blur="4" stdDeviation="4" result="blur4" />
+                    <feGaussianBlur in="SourceGraphic" data-target-blur="19" stdDeviation="19" result="blur19" />
+                    <feGaussianBlur in="SourceGraphic" data-target-blur="9" stdDeviation="9" result="blur9" />
+                    <feGaussianBlur in="SourceGraphic" data-target-blur="30" stdDeviation="30" result="blur30" />
+                    <feColorMatrix in="blur4" result="color-0-blur" type="matrix" values="1 0 0 0 0
+                              0 0.9803921568627451 0 0 0
+                              0 0 0.9647058823529412 0 0
+                              0 0 0 0.8 0" />
+                    <feOffset in="color-0-blur" result="layer-0-offsetted" dx="0" dy="0" data-target-offset-y="0" />
+                    <feColorMatrix in="blur19" result="color-1-blur" type="matrix" values="0.8156862745098039 0 0 0 0
+                              0 0.49411764705882355 0 0 0
+                              0 0 0.2627450980392157 0 0
+                              0 0 0 1 0" />
+                    <feOffset in="color-1-blur" result="layer-1-offsetted" dx="0" dy="2" data-target-offset-y="2" />
+                    <feColorMatrix in="blur9" result="color-2-blur" type="matrix" values="1 0 0 0 0
+                              0 0.6666666666666666 0 0 0
+                              0 0 0.36470588235294116 0 0
+                              0 0 0 0.65 0" />
+                    <feOffset in="color-2-blur" result="layer-2-offsetted" dx="0" dy="2" data-target-offset-y="2" />
+                    <feColorMatrix in="blur30" result="color-3-blur" type="matrix" values="1 0 0 0 0
+                              0 0.611764705882353 0 0 0
+                              0 0 0.39215686274509803 0 0
+                              0 0 0 1 0" />
+                    <feOffset in="color-3-blur" result="layer-3-offsetted" dx="0" dy="2" data-target-offset-y="2" />
+                    <feColorMatrix in="blur30" result="color-4-blur" type="matrix" values="0.4549019607843137 0 0 0 0
+                              0 0.16470588235294117 0 0 0
+                              0 0 0 0 0
+                              0 0 0 1 0" />
+                    <feOffset in="color-4-blur" result="layer-4-offsetted" dx="0" dy="16" data-target-offset-y="16" />
+                    <feColorMatrix in="blur30" result="color-5-blur" type="matrix" values="0.4235294117647059 0 0 0 0
+                              0 0.19607843137254902 0 0 0
+                              0 0 0.11372549019607843 0 0
+                              0 0 0 1 0" />
+                    <feOffset in="color-5-blur" result="layer-5-offsetted" dx="0" dy="64" data-target-offset-y="64" />
+                    <feColorMatrix in="blur30" result="color-6-blur" type="matrix" values="0.21176470588235294 0 0 0 0
+                              0 0.10980392156862745 0 0 0
+                              0 0 0.07450980392156863 0 0
+                              0 0 0 1 0" />
+                    <feOffset in="color-6-blur" result="layer-6-offsetted" dx="0" dy="64" data-target-offset-y="64" />
+                    <feColorMatrix in="blur30" result="color-7-blur" type="matrix" values="0 0 0 0 0
+                              0 0 0 0 0
+                              0 0 0 0 0
+                              0 0 0 0.68 0" />
+                    <feOffset in="color-7-blur" result="layer-7-offsetted" dx="0" dy="64" data-target-offset-y="64" />
+                    <feMerge>
+                        <feMergeNode in="layer-0-offsetted" />
+                        <feMergeNode in="layer-1-offsetted" />
+                        <feMergeNode in="layer-2-offsetted" />
+                        <feMergeNode in="layer-3-offsetted" />
+                        <feMergeNode in="layer-4-offsetted" />
+                        <feMergeNode in="layer-5-offsetted" />
+                        <feMergeNode in="layer-6-offsetted" />
+                        <feMergeNode in="layer-7-offsetted" />
+                        <feMergeNode in="layer-0-offsetted" />
+                        <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                </filter>
+                <filter id="glow-battery-safari-18" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"
+                    x="-50%" y="-50%" width="200%" Height="200%">
+                    <feGaussianBlur in="SourceGraphic" data-target-blur="4" stdDeviation="4" result="blur4" />
+                    <feGaussianBlur in="SourceGraphic" data-target-blur="12" stdDeviation="12" result="blur12" />
+                    <feGaussianBlur in="SourceGraphic" data-target-blur="9" stdDeviation="9" result="blur9" />
+                    <feGaussianBlur in="SourceGraphic" data-target-blur="12" stdDeviation="12" result="blur12" />
+                    <feColorMatrix in="blur4" result="color-0-blur" type="matrix" values="1 0 0 0 0
+                              0 0.9803921568627451 0 0 0
+                              0 0 0.9647058823529412 0 0
+                              0 0 0 0.8 0" />
+                    <feOffset in="color-0-blur" result="layer-0-offsetted" dx="0" dy="0" data-target-offset-y="0" />
+                    <feColorMatrix in="blur12" result="color-1-blur" type="matrix" values="0.8156862745098039 0 0 0 0
+                              0 0.49411764705882355 0 0 0
+                              0 0 0.2627450980392157 0 0
+                              0 0 0 1 0" />
+                    <feOffset in="color-1-blur" result="layer-1-offsetted" dx="0" dy="2" data-target-offset-y="2" />
+                    <feColorMatrix in="blur9" result="color-2-blur" type="matrix" values="1 0 0 0 0
+                              0 0.6666666666666666 0 0 0
+                              0 0 0.36470588235294116 0 0
+                              0 0 0 0.65 0" />
+                    <feOffset in="color-2-blur" result="layer-2-offsetted" dx="0" dy="2" data-target-offset-y="2" />
+                    <feColorMatrix in="blur12" result="color-3-blur" type="matrix" values="1 0 0 0 0
+                              0 0.611764705882353 0 0 0
+                              0 0 0.39215686274509803 0 0
+                              0 0 0 1 0" />
+                    <feOffset in="color-3-blur" result="layer-3-offsetted" dx="0" dy="2" data-target-offset-y="2" />
+                    <feColorMatrix in="blur12" result="color-4-blur" type="matrix" values="0.4549019607843137 0 0 0 0
+                              0 0.16470588235294117 0 0 0
+                              0 0 0 0 0
+                              0 0 0 1 0" />
+                    <feOffset in="color-4-blur" result="layer-4-offsetted" dx="0" dy="16" data-target-offset-y="16" />
+                    <feColorMatrix in="blur12" result="color-5-blur" type="matrix" values="0.4235294117647059 0 0 0 0
+                              0 0.19607843137254902 0 0 0
+                              0 0 0.11372549019607843 0 0
+                              0 0 0 1 0" />
+                    <feOffset in="color-5-blur" result="layer-5-offsetted" dx="0" dy="20" data-target-offset-y="20" />
+                    <feColorMatrix in="blur12" result="color-6-blur" type="matrix" values="0.21176470588235294 0 0 0 0
+                              0 0.10980392156862745 0 0 0
+                              0 0 0.07450980392156863 0 0
+                              0 0 0 1 0" />
+                    <feOffset in="color-6-blur" result="layer-6-offsetted" dx="0" dy="20" data-target-offset-y="20" />
+                    <feColorMatrix in="blur12" result="color-7-blur" type="matrix" values="0 0 0 0 0
+                              0 0 0 0 0
+                              0 0 0 0 0
+                              0 0 0 0.68 0" />
+                    <feOffset in="color-7-blur" result="layer-7-offsetted" dx="0" dy="20" data-target-offset-y="20" />
+                    <feMerge>
+                        <feMergeNode in="layer-0-offsetted" />
+                        <feMergeNode in="layer-1-offsetted" />
+                        <feMergeNode in="layer-2-offsetted" />
+                        <feMergeNode in="layer-3-offsetted" />
+                        <feMergeNode in="layer-4-offsetted" />
+                        <feMergeNode in="layer-5-offsetted" />
+                        <feMergeNode in="layer-6-offsetted" />
+                        <feMergeNode in="layer-7-offsetted" />
+                        <feMergeNode in="layer-0-offsetted" />
+                        <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                </filter>
+                <filter id="glow-battery-ios" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse" x="-50%"
+                    y="-50%" width="200%" Height="200%">
+                    <feGaussianBlur in="SourceGraphic" data-target-blur="4" stdDeviation="4" result="blur4" />
+                    <feGaussianBlur in="SourceGraphic" data-target-blur="12" stdDeviation="12" result="blur12" />
+                    <feGaussianBlur in="SourceGraphic" data-target-blur="9" stdDeviation="9" result="blur9" />
+                    <feGaussianBlur in="SourceGraphic" data-target-blur="12" stdDeviation="12" result="blur12" />
+                    <feColorMatrix in="blur4" result="color-0-blur" type="matrix" values="1 0 0 0 0
+                            0 0.9803921568627451 0 0 0
+                            0 0 0.9647058823529412 0 0
+                            0 0 0 0.8 0" />
+                    <feOffset in="color-0-blur" result="layer-0-offsetted" dx="0" dy="0" data-target-offset-y="0" />
+                    <feColorMatrix in="blur12" result="color-1-blur" type="matrix" values="0.8156862745098039 0 0 0 0
+                            0 0.49411764705882355 0 0 0
+                            0 0 0.2627450980392157 0 0
+                            0 0 0 1 0" />
+                    <feOffset in="color-1-blur" result="layer-1-offsetted" dx="0" dy="2" data-target-offset-y="2" />
+                    <feColorMatrix in="blur9" result="color-2-blur" type="matrix" values="1 0 0 0 0
+                            0 0.6666666666666666 0 0 0
+                            0 0 0.36470588235294116 0 0
+                            0 0 0 0.65 0" />
+                    <feOffset in="color-2-blur" result="layer-2-offsetted" dx="0" dy="2" data-target-offset-y="2" />
+                    <feColorMatrix in="blur12" result="color-3-blur" type="matrix" values="1 0 0 0 0
+                            0 0.611764705882353 0 0 0
+                            0 0 0.39215686274509803 0 0
+                            0 0 0 1 0" />
+                    <feOffset in="color-3-blur" result="layer-3-offsetted" dx="0" dy="2" data-target-offset-y="2" />
+                    <feColorMatrix in="blur12" result="color-4-blur" type="matrix" values="0.4549019607843137 0 0 0 0
+                            0 0.16470588235294117 0 0 0
+                            0 0 0 0 0
+                            0 0 0 1 0" />
+                    <feOffset in="color-4-blur" result="layer-4-offsetted" dx="0" dy="12" data-target-offset-y="12" />
+                    <feColorMatrix in="blur12" result="color-5-blur" type="matrix" values="0.4235294117647059 0 0 0 0
+                            0 0.19607843137254902 0 0 0
+                            0 0 0.11372549019607843 0 0
+                            0 0 0 1 0" />
+                    <feOffset in="color-5-blur" result="layer-5-offsetted" dx="0" dy="12" data-target-offset-y="12" />
+                    <feColorMatrix in="blur12" result="color-6-blur" type="matrix" values="0.21176470588235294 0 0 0 0
+                            0 0.10980392156862745 0 0 0
+                            0 0 0.07450980392156863 0 0
+                            0 0 0 1 0" />
+                    <feOffset in="color-6-blur" result="layer-6-offsetted" dx="0" dy="12" data-target-offset-y="12" />
+                    <feColorMatrix in="blur12" result="color-7-blur" type="matrix" values="0 0 0 0 0
+                            0 0 0 0 0
+                            0 0 0 0 0
+                            0 0 0 0.68 0" />
+                    <feOffset in="color-7-blur" result="layer-7-offsetted" dx="0" dy="12" data-target-offset-y="12" />
+                    <feMerge>
+                        <feMergeNode in="layer-0-offsetted" />
+                        <feMergeNode in="layer-1-offsetted" />
+                        <feMergeNode in="layer-2-offsetted" />
+                        <feMergeNode in="layer-3-offsetted" />
+                        <feMergeNode in="layer-4-offsetted" />
+                        <feMergeNode in="layer-5-offsetted" />
+                        <feMergeNode in="layer-6-offsetted" />
+                        <feMergeNode in="layer-7-offsetted" />
+                        <feMergeNode in="layer-0-offsetted" />
+                        <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                </filter>
+            </defs>
+        </svg>
+    </div>
+
+    <div class="nav-container off-screen">
+        <div class="nav-backdrop"></div>
+        <nav>
+            <div class="ul-container">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Brands</a></li>
+                    <li><a href="#">Legal</a></li>
+                </ul>
+            </div>
+            <div class="tab">
+                <div class="button">
+                    <div class="button-icon">
+                        <img src="images/menu-2-bar.png" alt="menu" class="menu" />
+                    </div>
+                    <svg width="168" height="33" viewBox="0 0 168 33" fill="none" class="MenuButtonClip_svg__1d0Mk">
+                        <clipPath id="menuButtonClip">
+                            <path
+                                d="M0.988281 -0.12793H167.016L145.491 25.1077C141.691 29.5627 136.13 32.1288 130.274 32.1288H38.4755C32.7372 32.1288 27.2753 29.664 23.4787 25.3612L0.988281 -0.12793Z"
+                                fill="white"></path>
+                        </clipPath>
+                    </svg>
+                </div>
+            </div>
+        </nav>
+        <div class="border-left"></div>
+        <div class="border-right"></div>
+        <div class="border-bottom"></div>
+    </div>
+    <main>
+
+        <section class="hero">
+            <div class="hero scroll-container">
+                <div class="hero-video-1-wrapper">
+                    <video class="hero-video-1" src="media/hero-video-1-bw.mp4" autoplay muted loop></video>
+                    <div class="mask"></div>
+                </div>
+                <div class="sticky">
+                    <div class="hero-title-wrapper">
+                        <h1 class="hero-1-title">
+                            <span class="word">We're</span>
+                            <span class="word"> </span>
+                            <span class="word">building</span>
+                            <span class="word"> </span>
+                            <span class="word">the</span>
+                            <span class="word"> </span>
+                            <span class="word">future</span>
+                            <span class="word"> </span>
+                            <span class="word">of</span>
+                            <span class="word"> </span>
+                            <span class="word-wrapper">
+                                <span class="word">recommerce</span>
+                                <span class="highlight glow">recommerce</span>
+                            </span>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="copy">
+            <div class="copy scroll-container">
+                <div class="sticky">
+                    <div class="hero-video-2-wrapper">
+                        <video class="hero-video-1" src="media/hero-video-2-bw.mp4" autoplay muted loop></video>
+                        <div class="mask"></div>
+                    </div>
+                    <div class="copy-title-wrapper">
+                        <h1 class="hero-text-2">And creating the <br />technology to
+                            <span class="word-wrapper">
+                                <span class="word">power</span>
+                                <span class="highlight">power</span>
+                            </span>
+                            it
+                        </h1>
+                    </div>
+                </div>
+                <div class="copy-wrapper">
+                    <p class="hero-copy-paragraph">
+                        <span class="hero-copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut</span>
+                        <span class="hero-copy">labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco</span>
+                        <span class="hero-copy">laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                            in reprehenderit in</span>
+                        <span class="hero-copy">voluptate velit esse cillum dolore eu fugiat nulla pariatur.</span>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="tech">
+            <div class="slides">
+                <div class="slide slide-1">
+                    <div class="left">
+                        <div class="slide-copy">
+                            <p class="copy">Lorem ipsum dolor sit amet,
+                                <span class="word-wrapper">
+                                    <span class="word">consectetur</span>
+                                    <span class="highlight">consectetur</span></span>
+                                </span>
+                                <span class="word-wrapper">
+                                    <span class="word">adipiscing</span>
+                                    <span class="highlight">adipiscing</span></span>
+                                </span>
+                                <span class="word-wrapper">
+                                    <span class="word">elit</span>
+                                    <span class="highlight">elit</span></span>
+                                </span>
+                                Sed do eiusmod tempor incididunt ut labore.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="content">
+                            <div class="stack">
+                                <picture class="app-screen">
+                                    <img src="images/app-screen-1.png" alt="phone-app">
+                                </picture>
+                                <picture class="phone">
+                                    <img src="images/iphone-in-hand.png" alt="phone">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide slide-2">
+                    <div class="left">
+                        <div class="slide-copy">
+                            <p class="copy">Lorem ipsum dolor sit amet,
+                                <span class="word-wrapper">
+                                    <span class="word">consectetur</span>
+                                    <span class="highlight">consectetur</span></span>
+                                </span>
+                                <span class="word-wrapper">
+                                    <span class="word">adipiscing</span>
+                                    <span class="highlight">adipiscing</span></span>
+                                </span>
+                                <span class="word-wrapper">
+                                    <span class="word">elit</span>
+                                    <span class="highlight">elit</span></span>
+                                </span>
+                                Sed do eiusmod tempor incididunt ut labore.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="content">
+                            <picture class="app-screen">
+                                <img src="images/app-screen-2.png" alt="phone-app">
+                            </picture>
+                            <picture class="phone">
+                                <img src="images/iphone-in-hand.png" alt="phone">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide slide-3">
+                    <div class="left">
+                        <div class="slide-copy">
+                            <p class="copy">Lorem ipsum dolor sit amet,
+                                <span class="word-wrapper">
+                                    <span class="word">consectetur</span>
+                                    <span class="highlight">consectetur</span></span>
+                                </span>
+                                <span class="word-wrapper">
+                                    <span class="word">adipiscing</span>
+                                    <span class="highlight">adipiscing</span></span>
+                                </span>
+                                <span class="word-wrapper">
+                                    <span class="word">elit</span>
+                                    <span class="highlight">elit</span></span>
+                                </span>
+                                Sed do eiusmod tempor incididunt ut labore.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="content">
+                            <picture class="laptop">
+                                <img src="images/laptop-hardware.jpg" alt="laptop">
+                            </picture>
+                            <picture class="laptop-app-screen">
+                                <img src="images/laptop-screen-1.jpg" alt="laptop-app-screen">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide slide-4">
+                    <div class="left">
+                        <div class="slide-copy">
+                            <p class="copy">Lorem ipsum dolor sit amet,
+                                <span class="word-wrapper">
+                                    <span class="word">consectetur</span>
+                                    <span class="highlight">consectetur</span></span>
+                                </span>
+                                <span class="word-wrapper">
+                                    <span class="word">adipiscing</span>
+                                    <span class="highlight">adipiscing</span></span>
+                                </span>
+                                <span class="word-wrapper">
+                                    <span class="word">elit</span>
+                                    <span class="highlight">elit</span></span>
+                                </span>
+                                Sed do eiusmod tempor incididunt ut labore.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="content">
+                            <picture class="laptop">
+                                <img src="images/laptop-hardware.jpg" alt="laptop">
+                            </picture>
+                            <picture class="laptop-app-screen">
+                                <img src="images/laptop-screen-2.jpg" alt="laptop-app-screen">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="brands">
+            <div class="two-column-grid">
+                <div class="brands-header">
+                    <h2>Our Brands</h2>
+                </div>
+                <div class="brands-header">
+                    <p>We are a group of brands that are all about sustainability and innovation.</p>
+                </div>
+                <div class="brand-item arcavindi">
+                    <img src="/images/arcavindi-logo.svg" alt="Arcavindi">
+                    <a href="/brands/arca-vindi.html">
+                        <div class="brand-text">
+                            <h3>Arca Vindi</h3>
+                            <p>Description goes here</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="brand-item vcc">
+                    <img src="/images/vcc.webp" alt="Vintage Cash Cow">
+                    <a href="/brands/vcc">
+                        <div class="brand-text">
+                            <h3>Vintage Cash Cow</h3>
+                            <p>Description goes here</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="brand-item vintage-honey-pots">
+                    <img src="/images/vintage-honey-pots.webp" alt="Arcavindi">
+                    <a href="/brands/vintage-honey-pots">
+                        <div class="brand-text">
+                            <h3>Vintage Honey Pots</h3>
+                            <p>Description goes here</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="brand-item luxoris">
+                    <p>Luxoris</p>
+                    <a href="/brands/arcavindi">
+                        <div class="brand-text">
+                            <h3>Luxoris</h3>
+                            <p>Description goes here</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-row">
+                <ul>
+                    <li>
+                        <h3>Contact</h3>
+                        <a href="./lets-chat">
+                            <span class="highlight-on-hover">Let’s chat.</span>
+                        </a>
+                    </li>
+                    <li>
+                        <h3>Newsletter</h3>
+                        <a href="./subscribe">
+                            <span class="highlight-on-hover">Subscribe.</span>
+                        </a>
+                    </li>
+                    <li>
+                        <h3>Join us</h3>
+                        <a href="./careers">
+                            <span class="highlight-on-hover">Careers.</span>
+                        </a>
+                    </li>
+                </ul>
+                </ul>
+            </div>
+            <div class="footer-row">
+                <p>© TopCo 2025</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
